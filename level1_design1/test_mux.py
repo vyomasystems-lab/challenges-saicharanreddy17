@@ -33,14 +33,14 @@ async def test_mux12(dut):
 @cocotb.test()
 async def test_mux123(dut):
     """Test for mux2"""
-    s = 0b11100
-    i = 0b100
+    s = 0b10011
+    i = 0b10
 
     dut.sel.value = s
-    dut.inp28.value = i
+    dut.inp19.value = i
 
     await Timer(2, units='ns')
 
-    assert dut.out.value == 0b100, f"mux result is incorrect: {dut.X.value} != 0b100"
+    assert dut.out.value == 0b10, f"mux result is incorrect: {dut.X.value} != 0b10"
 
     

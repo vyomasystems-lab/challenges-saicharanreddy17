@@ -44,7 +44,7 @@ module mux(sel,inp0, inp1, inp2, inp3, inp4, inp5, inp6, inp7, inp8,
       5'b10000: out = inp16;
       5'b10001: out = inp17;
       5'b10010: out = inp18;
-      5'b10011: out = inp19;
+      5'b10011: out = inp18;   //inp19
       5'b10100: out = inp20;
       5'b10101: out = inp21;
       5'b10110: out = inp22;
